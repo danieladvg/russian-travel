@@ -1,0 +1,14 @@
+.website__url-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #fff;
+}
+
+.website__url-link:hover {
+    opacity: .8;
+    cursor: pointer;
+    transition: .5s;
+}
