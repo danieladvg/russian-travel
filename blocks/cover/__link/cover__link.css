@@ -1,6 +1,8 @@
-.cover__overlay {
+.cover__link {
     width: 100%;
     min-height: 740px;
+    background-image: url(../../../images/cover/__background.jpg);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,20 +13,38 @@
     text-decoration: none;
 }
 
+.cover__link::before {
+    background-color: #2A2C2F;
+    opacity: .3;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.cover__link:hover::before {
+    opacity: .8;
+    cursor: pointer;
+}
+
+
 @media screen and (max-width: 1024px) {
-    .cover__overlay {
+    .cover__link {
         min-height: 640px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .cover__overlay {
+    .cover__link {
         min-height: 480px;
     }
 }
 
 @media screen and (max-width: 425px) {
-    .cover__overlay {
+    .cover__link {
         min-height: 200px;
         gap: 16px;
     }

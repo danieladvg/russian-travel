@@ -1,3 +1,10 @@
 .lead__figure {
     margin: 0;
 }
+
+@media screen and (max-width: 1024px) {
+    .lead__figure {
+        max-width: 928px;
+        margin: 0 auto;
+    }
+}
